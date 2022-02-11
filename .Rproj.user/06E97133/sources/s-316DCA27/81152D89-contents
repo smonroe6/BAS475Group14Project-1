@@ -1,0 +1,15 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+```{r}
+library(fpp3)
+data("tourism")
+
+t <- tourism %>%filter(Region %in% c("Outback"))
+
+autoplot(t)
+```
+
