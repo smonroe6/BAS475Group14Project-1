@@ -8,19 +8,25 @@
 #
 
 library(shiny)
+library(fpp3)
+data("tourism")
+
+
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
 
     output$distPlot <- renderPlot({
-
+        t <- tourism %>%filter(Region %in% c("Outback"))
+        autoplot(t)
         # generate bins based on input$bins from ui.R
-        x    <- faithful[, 2]
-        bins <- seq(min(x), max(x), length.out = input$bins + 1)
+       # x    <- faithful[, 2]
+    #    bins <- seq(min(x), max(x), length.out = input$bins + 1)
 
         # draw the histogram with the specified number of bins
-        hist(x, breaks = bins, col = 'darkgray', border = 'white')
+     #   hist(x, breaks = bins, col = 'darkgray', border = 'white')
 
     })
 
 })
+
