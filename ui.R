@@ -29,5 +29,7 @@ shinyUI(fluidPage(
         mainPanel(
             plotOutput("distPlot")
         )
-    )
+    ), 
+    selectInput(inputId = "Purpose", label = "Purpose", choices = "Purpose")
 ))
+ 
