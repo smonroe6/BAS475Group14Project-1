@@ -1,0 +1,26 @@
+{
+    "id": "066C7F82",
+    "path": "~/GitHub/BAS475Group14Project-1/server.R",
+    "project_path": "server.R",
+    "type": "r_source",
+    "hash": "1410775739",
+    "contents": "",
+    "dirty": false,
+    "created": 1644716547952.0,
+    "source_on_save": false,
+    "relative_order": 5,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "29,4",
+        "scrollLine": "6"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1644797241,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1644797241523,
+    "read_only": false,
+    "read_only_alternatives": []
+}

@@ -22,14 +22,19 @@ shinyUI(fluidPage(
                         "Number of bins:",
                         min = 1,
                         max = 50,
-                        value = 30)
+                        value = 30),
+            selectInput(inputId = "Purpose", 
+                        label = "Purpose", 
+                        choices = list("Business", "Holiday", "Visiting", "Other"), 
+                        selected = 1)
         ),
 
         # Show a plot of the generated distribution
         mainPanel(
             plotOutput("distPlot")
         )
-    ), 
-    selectInput(inputId = "Purpose", label = "Purpose", choices = "Purpose")
+        
+    )
+    
 ))
  
